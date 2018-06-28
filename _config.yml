@@ -80,6 +80,7 @@ theme: next
 deploy:
   type: git
   repo: git@github.com:LucasLee92/LucasLee92.github.io.git
+  message: update blog
 
 # search
 ## node-module hexo-generator-searchdb
