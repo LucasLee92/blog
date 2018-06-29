@@ -1,5 +1,6 @@
 ---
 title: 在Ubuntu上安装和配置ftp服务器
+date: 2018-06-28 13:25:44
 categories:
     - linux
     - ftp
@@ -71,7 +72,7 @@ FTP是一个相对古老，用于两台电脑之间上传，下载文件的网�
     3. `echo "ftptest" | sudo tee -a /etc/vsftpd.userlist`
     4. `cat /etc/vsftpd.userlist`
 
-2. 修改配置文件，不予许在根目录写入， `#allow_writeable_chroot=YES`
+2. 处于安全要求，修改配置文件，不予许在根目录写入， `#allow_writeable_chroot=YES`
 
 3. 在用户根目录下创建一个目录，不允许其他用户写入
     ```
